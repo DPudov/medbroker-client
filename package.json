@@ -1,0 +1,39 @@
+{
+  "name": "medbroker-client",
+  "version": "0.0.1",
+  "description": "An universal client for the Medbroker API",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "querystringify": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "microbundle": "^0.12.3",
+    "nock": "^13.0.4"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "umd:main": "dist/index.umd.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json",
+    "dev": "microbundle watch --tsconfig tsconfig.json",
+    "test": "jest"
+  },
+  "author": {
+    "email": "pudovdyu@mail.ru",
+    "name": "Dmitry Pudov"
+  },
+  "keywords": [
+    "medbroker.app",
+    "typescript",
+    "api",
+    "client"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ]
+}
