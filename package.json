@@ -10,6 +10,7 @@
     "@types/jest": "^26.0.13",
     "jest": "^26.4.2",
     "microbundle": "^0.12.3",
+    "ts-jest": "^26.3.0",
     "nock": "^13.0.4"
   },
   "main": "dist/index.js",
@@ -19,7 +20,7 @@
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json",
     "dev": "microbundle watch --tsconfig tsconfig.json",
-    "test": "jest"
+    "test": "jest --config=jest.json"
   },
   "author": {
     "email": "pudovdyu@mail.ru",

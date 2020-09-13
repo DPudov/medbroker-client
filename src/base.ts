@@ -11,7 +11,7 @@ export abstract class Base {
 
     constructor(config: Config) {
         this.apiKey = config.apiKey
-        this.basePath = config.basePath || 'https://medbroker.app/v2'
+        this.basePath = config.basePath || 'https://medbroker.app/v2/'
     }
 
     protected request<T>(endpoint: string, options?: RequestInit): Promise<T> {

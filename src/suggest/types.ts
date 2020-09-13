@@ -8,12 +8,16 @@ export enum RecommendationMode {
 
 export type RecommendationMisc = {
     message: string;
-    reactions: [string, string];
+    reactions: any;
 }
 
 export type Recommendation = {
-    servCode: string;
-    servName: string;
+    serv_code: string;
+    serv_name: string;
     message: string;
     miscellaneous: RecommendationMisc;
+}
+
+export type SuggestResponse = {
+    suggests: Recommendation[]
 }

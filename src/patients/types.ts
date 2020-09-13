@@ -1,5 +1,5 @@
 export type Patient = {
-    patientId: number,
+    patient_id: number,
     sex: number,
     birthday: number
 }
