@@ -24,7 +24,7 @@ npm i medbroker-client
 
     const MedBrokerClient = new MedBroker({ apiKey: '%apiKey%' })
     
-    MedBrokerClient.getSuggestionsForPatient({
+    MedBrokerClient.suggestServsToUser({
         patient: {
             patient_id: 1234,
             sex: 1,
